@@ -1,0 +1,53 @@
+﻿; This Add-on is not created by, affiliated with or sponsored by ZeniMax
+; Media Inc. or its affiliates. The Elder Scrolls® and related logos are
+; registered trademarks or trademarks of ZeniMax Media Inc. in the United
+; States and/or other countries. All rights reserved.
+; You can read the full terms at https://account.elderscrollsonline.com/add-on-terms
+
+## Title: Loot To Chat
+## Description: Displays loot/currency in the chat window.
+## Author: Vaddi
+## APIVersion: 100026 100027
+## AddOnVersion: 2
+## Version: 2.06
+## SavedVariables: LTCPreferences
+## DependsOn: LibAddonMenu-2.0
+
+language/en.lua
+language/$(language).lua
+
+LootToChat.lua
+
+;History
+; v1.0  - Inital release (more like beta)
+; v1.1  - Added line commands
+; v1.2  - Added comma formatting for money amounts
+;         Added backpack and bank totals when looting gold
+; v1.3  - Code optimization
+;         Removed all string concatenation from loot functions
+; v1.4  - code cleanup
+; v1.5  - icon tweaks
+;         added saved preferences
+; v1.6  - add preferences menu
+;         rewrite of currency routine to handle non-gold currencies
+;         removed slash commands (/ltc now opens the preferences menu)
+; v1.7  - removed dead code, some debug routines, commented code
+; v1.8  - API updated to 100026 (Wrathstone)
+;         "Announce" option now works correctly
+; v1.9  - Added display of crafting material used
+;         Collectibles now display an icon
+;         Master Writs display the number of vouchers
+;         Crafting materials taken from email display in chat
+;         Looted furniture material can be displayed even when low level crafting material is filtered
+;         Screen announcements for high quality loot
+;         Quality sliders in settings replaced with dropdowns
+;         Minor tweaks and code enhancements
+; v2.0  - Added Account/Character choice for settings
+;         Added overrides for rare crafting material
+;         Decoupled screen announcements from the chat display
+;         Added color selections to the settings menu
+;         Added language localization support
+;         Added support for known/unknown recipes and styles
+;         Added support for researchable
+;         More code optimization (actually; a huge re-write)
+;         API updated to 100027 (Elsweyr)
